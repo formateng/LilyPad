@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Grasshopper.Kernel;
+using Rhino.Geometry;
+using Rhino.Geometry.Intersect;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Rhino.Geometry;
-using Rhino.Geometry.Intersect;
 using TriangleNet.Data;
 
 namespace LilyPad.Objects
@@ -23,6 +24,7 @@ namespace LilyPad.Objects
         //Properties
         private PrincipalMesh PrincipalMesh1;
         private PrincipalMesh PrincipalMesh2;
+        private GH_Component ParentComponent;
         private List<Polyline> stresslinesFamily1;
         private List<Polyline> stresslinesFamily2;
         private List<Polyline> discretisedStresslinesFamily1;
@@ -34,13 +36,14 @@ namespace LilyPad.Objects
 
 
         //Constructors
-        public StresslineStructure(PrincipalMesh principalMesh1, PrincipalMesh principalMesh2)
+        public StresslineStructure(GH_Component parentComponent, PrincipalMesh principalMesh1, PrincipalMesh principalMesh2)
         {
             if (!IsPlanar(principalMesh1.Mesh, out Plane plane1) || !IsPlanar(principalMesh2.Mesh, out Plane plane2))
             {
                 throw new ArgumentException("One or both of the provided meshes are not planar.");
             }
 
+            ParentComponent = parentComponent;
             PrincipalMesh1 = principalMesh1;
             PrincipalMesh2 = principalMesh2;
             MeshPlane = plane1; // Assuming both meshes are on the same plane
@@ -72,8 +75,8 @@ namespace LilyPad.Objects
             stresslinesFamily1 = new List<Polyline>(family1Intial);
             stresslinesFamily2 = new List<Polyline>(family2Intial);
 
-            Streamlines streamlines1 = new Streamlines(PrincipalMesh1, StepSize, 4, MaxError, 0.0);
-            Streamlines streamlines2 = new Streamlines(PrincipalMesh2, StepSize, 4, MaxError, 0.0);
+            Streamlines streamlines1 = new Streamlines(ParentComponent, PrincipalMesh1, StepSize, 4, MaxError, 0.0);
+            Streamlines streamlines2 = new Streamlines(ParentComponent, PrincipalMesh2, StepSize, 4, MaxError, 0.0);
 
             //discretise the initial stresslines
             Discretise();

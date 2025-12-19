@@ -76,7 +76,7 @@ namespace LilyPad.Components.Results
             int iterations2 = Convert.ToInt32(iIterations2);
 
             //Create structure
-            StresslineStructure stresslineStructure = new StresslineStructure(iPrincipalMesh1, iPrincipalMesh2);
+            StresslineStructure stresslineStructure = new StresslineStructure(this, iPrincipalMesh1, iPrincipalMesh2);
             stresslineStructure.SetStreamlineProperties(iStepSize, iMaxAngle);
             List<Polyline> oStructure = stresslineStructure.Grow(initialStressLines1, initialStressLines2, iterations1, iterations2);
 

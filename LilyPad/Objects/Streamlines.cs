@@ -7,12 +7,13 @@
 ///summary
 
 
+using Grasshopper.Kernel;
+using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Rhino.Geometry;
 using TriangleNet;
 using TriangleNet.Data;
 
@@ -25,6 +26,7 @@ namespace LilyPad.Objects
         public Rhino.Geometry.Mesh Mesh;
         private Polyline[] NakedEdges;
         private TriangleNet.Geometry.InputGeometry TriGeom;
+        private GH_Component ParentComponent;
 
         //Variables_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -84,12 +86,13 @@ namespace LilyPad.Objects
         /// <summary>
         /// creates a new streamline class, importing data of a given principalMesh
         /// </summary>
-        public Streamlines(PrincipalMesh principalMesh, double iStepSize, int method, double maxError, double dTest)
+        public Streamlines(GH_Component parentComponent, PrincipalMesh principalMesh, double iStepSize, int method, double maxError, double dTest)
         {
             PrincipalMesh = principalMesh;
             Mesh = principalMesh.Mesh;
             Mesh.FaceNormals.ComputeFaceNormals();
             NakedEdges = principalMesh.NakedEdges;
+            ParentComponent = parentComponent;
 
 
             CompletedStreamlines = new List<Polyline>();
@@ -390,6 +393,16 @@ namespace LilyPad.Objects
             {
                 //double error = solveStep(Point, out End, Method, direction);
                 End = Mesh.ClosestPoint(End);
+
+                if(i % 100 == 0)
+                {
+                    if (GH_Document.IsEscapeKeyDown())
+                    {
+                        ParentComponent.OnPingDocument()?.RequestAbortSolution(); //Abort the calculations
+                        throw new ArgumentException("Solution aborted due to ESC press");
+
+                    }
+                }
 
                 //tests if end is located at a naked edge; if it is then test is false
                 test = true;

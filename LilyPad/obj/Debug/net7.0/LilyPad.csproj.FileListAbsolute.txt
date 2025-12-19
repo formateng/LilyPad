@@ -59,7 +59,6 @@ C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\bin\Debug\net7.0\S
 C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\bin\Debug\net7.0\System.Formats.Nrbf.dll
 C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\bin\Debug\net7.0\System.Reflection.Metadata.dll
 C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\bin\Debug\net7.0\System.Resources.Extensions.dll
-C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\bin\Debug\net7.0\MathNet.Numerics.dll
 C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\bin\Debug\net7.0\Triangle.dll
 C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\obj\Debug\net7.0\LilyPad.csproj.AssemblyReference.cache
 C:\Users\Matt C\Documents\GitHub\PrincipalStressLines\LilyPad\obj\Debug\net7.0\LilyPad.Properties.Resources.resources

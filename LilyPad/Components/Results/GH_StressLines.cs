@@ -69,8 +69,9 @@ namespace LilyPad.Components.Results
             if (objWrapPrinciMesh != null)
                 iPrincipalMesh = objWrapPrinciMesh.Value as PrincipalMesh;
 
+
             //_________________________________________________________________________________
-            Streamlines streamlines = new Streamlines(iPrincipalMesh, iStepSize, Convert.ToInt32(iMethod), iMaxAngle, iDTest);
+            Streamlines streamlines = new Streamlines(this, iPrincipalMesh, iStepSize, Convert.ToInt32(iMethod), iMaxAngle, iDTest);
 
             List<Polyline> oStressLines = streamlines.CreateStreamlines(iSeed, Convert.ToInt32(iStrategy), iDSep);
 
