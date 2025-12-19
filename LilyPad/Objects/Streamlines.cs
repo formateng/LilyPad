@@ -146,7 +146,7 @@ namespace LilyPad.Objects
         /// <summary>
         /// Creates a series of streamlines by using two seeding methods to find the location of the new streamline
         /// </summary>
-        public List<Polyline> CreateStreamlines(Point3d seed, int seedingMethod, double dSep)
+        public List<Polyline> CreateStreamlines(List<Point3d> startSeed, int seedingMethod, double dSep)
         {
             //Starting varibles
             SeedingStrategy = seedingMethod;
@@ -159,13 +159,13 @@ namespace LilyPad.Objects
             //Neighbour seeding strategy
             if (seedingMethod == 1)
             {
-                NeighbourStreamlines(seed);
+                NeighbourStreamlines(startSeed);
             }
 
             //Farthest Point Strategy
             if (seedingMethod == 2)
             {
-                FarthestSteamlines(seed);
+                FarthestSteamlines(startSeed[0]);
             }
             return CompletedStreamlines;
         }
@@ -173,12 +173,13 @@ namespace LilyPad.Objects
         /// <summary>
         /// streamline seeding method for finding next seed point adjecent to existing streamlines
         /// </summary>
-        /// <param name="seed"></param>
-        private void NeighbourStreamlines(Point3d seed)
+        /// <param name="startSeed"></param>
+        private void NeighbourStreamlines(List<Point3d> startSeed)
         {
             List<Point3d> seeds = new List<Point3d>();
-            seeds.Add(seed);
+            seeds.AddRange(startSeed);
             Polyline activeStreamline = new Polyline();
+            Point3d seed = new Point3d();
 
             while (seeds.Count > 0)
             {
@@ -248,8 +249,10 @@ namespace LilyPad.Objects
                     seed2 = Mesh.ClosestPoint(seed2);
 
                     //insert new seeds
-                    seeds.Insert(0, seed1);
-                    seeds.Insert(0, seed2);
+                    seeds.Add(seed1);
+                    seeds.Add(seed2);
+                    //seeds.Insert(0, seed1);
+                    //seeds.Insert(0, seed2);
                 }
 
             BREAK:;

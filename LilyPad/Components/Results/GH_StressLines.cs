@@ -24,7 +24,7 @@ namespace LilyPad.Components.Results
         protected override void RegisterInputParams(GH_InputParamManager pManager)
         {
             pManager.AddGenericParameter("Principal Mesh", "Mesh", "Principal mesh to analyse", GH_ParamAccess.item);
-            pManager.AddPointParameter("Seed", "S", "Point which the streamline passes through", GH_ParamAccess.item);
+            pManager.AddPointParameter("Seeds", "S", "Points which the first stress lines pass through", GH_ParamAccess.list);
             pManager.AddNumberParameter("Step Tolerance", "T", "Size of the step between successive points", GH_ParamAccess.item);
             pManager.AddNumberParameter("Max. Error", "Err", "If value > 0 then an adaptive step procedure is used where the step size is decreased if the estimated integration error is more than the specified value", GH_ParamAccess.item, 0.0);
             //pManager.AddNumberParameter("Seeding Method", "SM", "Seeding strategy used to generate new seeding point: 'Neighbour =1', 'Fill Gap=2'", GH_ParamAccess.item, 1.0);
@@ -50,7 +50,7 @@ namespace LilyPad.Components.Results
 
 
             PrincipalMesh iPrincipalMesh = new PrincipalMesh();
-            Point3d iSeed = new Point3d();
+            List<Point3d> iSeed = new List<Point3d>();
             double iStepSize = 0.0;
             double iMethod = 4; //the core code allows a choice of integration method but as the Runge Kutta 4 method is superior, this method is used by the component
             double iMaxAngle = 0.0;
@@ -59,7 +59,7 @@ namespace LilyPad.Components.Results
             double iDTest = 0.0;
 
             DA.GetData(0, ref objWrapPrinciMesh);
-            DA.GetData(1, ref iSeed);
+            DA.GetDataList(1, iSeed);
             DA.GetData(2, ref iStepSize);
             DA.GetData(3, ref iMaxAngle);
             //DA.GetData(4, ref iStrategy);
