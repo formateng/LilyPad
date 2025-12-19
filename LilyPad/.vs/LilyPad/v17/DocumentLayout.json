@@ -41,19 +41,6 @@
           "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GH_CreateDeformationMesh.cs",
-              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Setup\\GH_CreateDeformationMesh.cs",
-              "RelativeDocumentMoniker": "Components\\Setup\\GH_CreateDeformationMesh.cs",
-              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Setup\\GH_CreateDeformationMesh.cs",
-              "RelativeToolTip": "Components\\Setup\\GH_CreateDeformationMesh.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T12:07:25.785Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
@@ -71,6 +58,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GH_CreateDeformationMesh.cs",
+              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Setup\\GH_CreateDeformationMesh.cs",
+              "RelativeDocumentMoniker": "Components\\Setup\\GH_CreateDeformationMesh.cs",
+              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Setup\\GH_CreateDeformationMesh.cs",
+              "RelativeToolTip": "Components\\Setup\\GH_CreateDeformationMesh.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:07:25.785Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GH_StressLines.cs",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Results\\GH_StressLines.cs",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "Components\\Results\\GH_StressLines.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAIwEsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T18:42:01.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T18:42:01.928Z"
             },
             {
               "$type": "Document",
@@ -114,7 +112,7 @@
               "RelativeDocumentMoniker": "Objects\\Streamlines.cs",
               "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Objects\\Streamlines.cs",
               "RelativeToolTip": "Objects\\Streamlines.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAAAUwPoAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAUwLgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T19:14:35.194Z",
               "EditorCaption": ""

@@ -188,13 +188,14 @@ namespace LilyPad.Objects
                 seed = seeds[0];
 
                 //test if seed is valid for stream line seperation distance, if not remove seed
-                Vector3d radius1 = new Vector3d(DSep * 0.99, DSep * 0.99, DSep * 0.99);
+                double SeedDistFactor = Math.Max(0.6, DTest / DSep * 1.1);
+                Vector3d radius1 = new Vector3d(DSep * SeedDistFactor, DSep * SeedDistFactor, DSep * SeedDistFactor);
                 BoundingBox testBox = new BoundingBox(seed - radius1, seed + radius1);
                 for (int i = 0; i < CheckPts.Count; i++)
                 {
                     if (testBox.Contains(CheckPts[i]))
                     {
-                        if ((CheckPts[i] - seed).Length < DSep * 0.99)
+                        if ((CheckPts[i] - seed).Length < DSep * SeedDistFactor)
                         {
                             seeds.RemoveAt(0);
                             goto BREAK;
@@ -241,8 +242,8 @@ namespace LilyPad.Objects
                     //offset pt by the streamline direction rotated by 90 degrees in both directions
                     streamlineDirection.Rotate(Math.PI / 2, Mesh.FaceNormals[meshPt.FaceIndex]); ;
                     Point3d seed1 = pt + streamlineDirection / streamlineDirection.Length * DSep;
-                    streamlineDirection.Rotate(Math.PI, Mesh.FaceNormals[meshPt.FaceIndex]); ;
-                    Point3d seed2 = pt + streamlineDirection / streamlineDirection.Length * DSep;
+                    //streamlineDirection.Rotate(Math.PI, Mesh.FaceNormals[meshPt.FaceIndex]); ;
+                    Point3d seed2 = pt - streamlineDirection / streamlineDirection.Length * DSep;
 
                     //move seeds onto the mesh
                     seed1 = Mesh.ClosestPoint(seed1);
