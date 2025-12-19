@@ -13,11 +13,7 @@
     <Import Project="$(NuGetPackageRoot)rhinocommon\8.0.23304.9001\build\net48\RhinoCommon.targets" Condition="Exists('$(NuGetPackageRoot)rhinocommon\8.0.23304.9001\build\net48\RhinoCommon.targets')" />
     <Import Project="$(NuGetPackageRoot)grasshopper\8.0.23304.9001\build\net48\Grasshopper.targets" Condition="Exists('$(NuGetPackageRoot)grasshopper\8.0.23304.9001\build\net48\Grasshopper.targets')" />
   </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-windows' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)system.collections.immutable\9.0.3\buildTransitive\netcoreapp2.0\System.Collections.Immutable.targets" Condition="Exists('$(NuGetPackageRoot)system.collections.immutable\9.0.3\buildTransitive\netcoreapp2.0\System.Collections.Immutable.targets')" />
-    <Import Project="$(NuGetPackageRoot)system.reflection.metadata\9.0.3\buildTransitive\netcoreapp2.0\System.Reflection.Metadata.targets" Condition="Exists('$(NuGetPackageRoot)system.reflection.metadata\9.0.3\buildTransitive\netcoreapp2.0\System.Reflection.Metadata.targets')" />
-    <Import Project="$(NuGetPackageRoot)system.formats.nrbf\9.0.3\buildTransitive\netcoreapp2.0\System.Formats.Nrbf.targets" Condition="Exists('$(NuGetPackageRoot)system.formats.nrbf\9.0.3\buildTransitive\netcoreapp2.0\System.Formats.Nrbf.targets')" />
-    <Import Project="$(NuGetPackageRoot)system.resources.extensions\9.0.3\buildTransitive\netcoreapp2.0\System.Resources.Extensions.targets" Condition="Exists('$(NuGetPackageRoot)system.resources.extensions\9.0.3\buildTransitive\netcoreapp2.0\System.Resources.Extensions.targets')" />
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net8' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)rhinocommon\8.0.23304.9001\build\net48\RhinoCommon.targets" Condition="Exists('$(NuGetPackageRoot)rhinocommon\8.0.23304.9001\build\net48\RhinoCommon.targets')" />
     <Import Project="$(NuGetPackageRoot)grasshopper\8.0.23304.9001\build\net48\Grasshopper.targets" Condition="Exists('$(NuGetPackageRoot)grasshopper\8.0.23304.9001\build\net48\Grasshopper.targets')" />
   </ImportGroup>

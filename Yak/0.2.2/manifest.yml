@@ -1,0 +1,16 @@
+---
+name: LilyPad
+version: 0.2.2
+authors:
+- Matt Church
+- Format Engineers
+description: A plugin for generating smooth evenly distributed stress lines to analyse structural shells and slabs
+url: https://github.com/formateng/PrincipalStressLines
+icon: icon.png
+keywords:
+- stresslines
+- principalstress
+- streamlines
+- structuralanalysis
+- FEA
+- optimisation

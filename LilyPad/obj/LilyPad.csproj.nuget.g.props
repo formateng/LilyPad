@@ -7,13 +7,16 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Matt C\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.13.2</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Matt C\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_NETFramework_ReferenceAssemblies_net48 Condition=" '$(PkgMicrosoft_NETFramework_ReferenceAssemblies_net48)' == '' ">C:\Users\Matt C\.nuget\packages\microsoft.netframework.referenceassemblies.net48\1.0.3</PkgMicrosoft_NETFramework_ReferenceAssemblies_net48>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net8' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_NETFramework_ReferenceAssemblies_net48 Condition=" '$(PkgMicrosoft_NETFramework_ReferenceAssemblies_net48)' == '' ">C:\Users\Matt C\.nuget\packages\microsoft.netframework.referenceassemblies.net48\1.0.3</PkgMicrosoft_NETFramework_ReferenceAssemblies_net48>
   </PropertyGroup>
 </Project>

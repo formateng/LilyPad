@@ -442,7 +442,7 @@
         }
       }
     },
-    "net7.0-windows7.0": {
+    "net8.0": {
       "Grasshopper/8.0.23304.9001": {
         "type": "package",
         "dependencies": {
@@ -465,14 +465,31 @@
           "build/net48/Grasshopper.targets": {}
         }
       },
-      "Microsoft.Bcl.HashCode/1.1.1": {
+      "Microsoft.NETFramework.ReferenceAssemblies.net48/1.0.3": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/7.0.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {}
+          "lib/net7.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {
+          "lib/net7.0/_._": {
             "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/_._": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       },
@@ -501,107 +518,100 @@
       },
       "System.Collections.Immutable/9.0.3": {
         "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+          "lib/net8.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+          "lib/net8.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets": {}
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/_._": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Formats.Nrbf/9.0.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.HashCode": "1.1.1",
           "System.Reflection.Metadata": "9.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/System.Formats.Nrbf.dll": {
+          "lib/net8.0/System.Formats.Nrbf.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Formats.Nrbf.dll": {
+          "lib/net8.0/System.Formats.Nrbf.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp2.0/System.Formats.Nrbf.targets": {}
-        }
-      },
-      "System.Memory/4.5.5": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "System.Reflection.Metadata/9.0.3": {
         "type": "package",
         "dependencies": {
-          "System.Collections.Immutable": "9.0.3",
-          "System.Memory": "4.5.5"
+          "System.Collections.Immutable": "9.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+          "lib/net8.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+          "lib/net8.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp2.0/System.Reflection.Metadata.targets": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "System.Resources.Extensions/9.0.3": {
         "type": "package",
         "dependencies": {
-          "System.Formats.Nrbf": "9.0.3",
-          "System.Memory": "4.5.5"
+          "System.Formats.Nrbf": "9.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+          "lib/net8.0/System.Resources.Extensions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+          "lib/net8.0/System.Resources.Extensions.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp2.0/System.Resources.Extensions.targets": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       }
     }
@@ -1450,8 +1460,10 @@
       "System.Drawing.Common >= 7.0.0",
       "System.Resources.Extensions >= 9.0.3"
     ],
-    "net7.0-windows7.0": [
+    "net8.0": [
       "Grasshopper >= 8.0.23304.9001",
+      "Microsoft.NETFramework.ReferenceAssemblies.net48 >= 1.0.3",
+      "System.Drawing.Common >= 7.0.0",
       "System.Resources.Extensions >= 9.0.3"
     ]
   },
@@ -1480,7 +1492,7 @@
       "originalTargetFrameworks": [
         "net48",
         "net7.0",
-        "net7.0-windows"
+        "net8"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -1491,8 +1503,8 @@
           "targetAlias": "net7.0",
           "projectReferences": {}
         },
-        "net7.0-windows7.0": {
-          "targetAlias": "net7.0-windows",
+        "net8.0": {
+          "targetAlias": "net8",
           "projectReferences": {}
         },
         "net48": {
@@ -1513,7 +1525,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net7.0": {
@@ -1570,15 +1582,26 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
       },
-      "net7.0-windows7.0": {
-        "targetAlias": "net7.0-windows",
+      "net8.0": {
+        "targetAlias": "net8",
         "dependencies": {
           "Grasshopper": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[8.0.23304.9001, )"
+          },
+          "Microsoft.NETFramework.ReferenceAssemblies.net48": {
+            "include": "None",
+            "target": "Package",
+            "version": "[1.0.3, )",
+            "generatePathProperty": true
+          },
+          "System.Drawing.Common": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "System.Resources.Extensions": {
             "target": "Package",
@@ -1596,29 +1619,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       },
       "net48": {
         "targetAlias": "net48",
@@ -1633,7 +1639,7 @@
             "version": "[9.0.3, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
       }
     }
   }
