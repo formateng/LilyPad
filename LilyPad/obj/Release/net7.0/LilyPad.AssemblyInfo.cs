@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Description of LilyPad")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fff9472a62d13476571925eae870c8dfe94bafff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a7cee61c81d824587ac48bb1300e0eba84e3e20d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LilyPad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LilyPad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
