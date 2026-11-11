@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\components\\tools\\gh_mohrscircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|solutionrelative:components\\tools\\gh_mohrscircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\lilypadinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|solutionrelative:lilypadinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\objects\\streamlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|solutionrelative:objects\\streamlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\components\\results\\gh_stresslines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|solutionrelative:components\\results\\gh_stresslines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\objects\\shapefunction\\tri3element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|solutionrelative:objects\\shapefunction\\tri3element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\objects\\streamlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|solutionrelative:objects\\streamlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E62D46F-B7A1-49D3-9300-9C08AAFC5C7B}|LilyPad.csproj|c:\\users\\matt c\\documents\\github\\principalstresslines\\lilypad\\components\\setup\\gh_createdeformationmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,8 +49,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 589,
-          "SelectedChildIndex": 10,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +70,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-11-11T12:23:42.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GH_MohrsCircle.cs",
+              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Tools\\GH_MohrsCircle.cs",
+              "RelativeDocumentMoniker": "Components\\Tools\\GH_MohrsCircle.cs",
+              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Tools\\GH_MohrsCircle.cs",
+              "RelativeToolTip": "Components\\Tools\\GH_MohrsCircle.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T12:08:09.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tri3Element.cs",
+              "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Objects\\ShapeFunction\\Tri3Element.cs",
+              "RelativeDocumentMoniker": "Objects\\ShapeFunction\\Tri3Element.cs",
+              "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Objects\\ShapeFunction\\Tri3Element.cs",
+              "RelativeToolTip": "Objects\\ShapeFunction\\Tri3Element.cs",
+              "ViewState": "AgIAADcBAAAAAAAAAADwv0cBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T09:22:48.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GH_CreateDeformationMesh.cs",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Setup\\GH_CreateDeformationMesh.cs",
               "RelativeDocumentMoniker": "Components\\Setup\\GH_CreateDeformationMesh.cs",
@@ -70,19 +119,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GH_StressLines.cs",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Results\\GH_StressLines.cs",
               "RelativeDocumentMoniker": "Components\\Results\\GH_StressLines.cs",
               "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Results\\GH_StressLines.cs",
               "RelativeToolTip": "Components\\Results\\GH_StressLines.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEsAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T18:42:01.928Z"
+              "WhenOpened": "2025-07-05T18:42:01.928Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "VectorMesh.cs",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Objects\\NthOrder\\VectorMesh.cs",
               "RelativeDocumentMoniker": "Objects\\NthOrder\\VectorMesh.cs",
@@ -94,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "GH_MindlinReissnerQuad4_OBSOLETE.cs",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Components\\Obsolete\\GH_MindlinReissnerQuad4_OBSOLETE.cs",
               "RelativeDocumentMoniker": "Components\\Obsolete\\GH_MindlinReissnerQuad4_OBSOLETE.cs",
@@ -106,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Streamlines.cs",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\Objects\\Streamlines.cs",
               "RelativeDocumentMoniker": "Objects\\Streamlines.cs",
@@ -119,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "LilyPad.csproj",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\LilyPad.csproj",
               "RelativeDocumentMoniker": "LilyPad.csproj",
@@ -131,13 +181,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LilyPadInfo.cs",
               "DocumentMoniker": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\LilyPadInfo.cs",
               "RelativeDocumentMoniker": "LilyPadInfo.cs",
               "ToolTip": "C:\\Users\\Matt C\\Documents\\GitHub\\PrincipalStressLines\\LilyPad\\LilyPadInfo.cs",
               "RelativeToolTip": "LilyPadInfo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T18:26:17.778Z",
               "EditorCaption": ""
